@@ -23,11 +23,3 @@ module.exports = () => (schema
       process.exit(1);
     })
 );
-
-mysql://
-username:b994081f814fe2
-:
-password: 29553b05
-@
-hostname:us-cdbr-east-02.cleardb.com
-/heroku_d35758a6591c78f?reconnect=true
