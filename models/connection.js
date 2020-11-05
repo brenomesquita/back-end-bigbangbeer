@@ -15,7 +15,7 @@ module.exports = () => (schema
   ? Promise.resolve(schema)
   : mysql.getSession(config)
     .then(async (session) => {
-      schema = await session.getSchema('Trybeer');
+      schema = await session.getSchema('heroku_d35758a6591c78f');
       return schema;
     })
     .catch((err) => {

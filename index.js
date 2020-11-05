@@ -8,7 +8,7 @@ const routes = require('./routes');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-app.get('/', (_req, res) => { res.status(200).send({deploy: 'deployed'})})
+app.get('/', (_req, res) => { res.status(200).send({deploy: 'deployed: heroku_d35758a6591c78f'})})
 app.use('/login', routes.loginRoute);
 app.use('/register', routes.registerRoute);
 app.use('/profile', routes.profileRoute);
