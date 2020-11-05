@@ -9,6 +9,7 @@ const singupUser = rescue(async (req, res, next) => {
   const { name, email, password, role } = req.body;
 
   const newUser = await registerService.singupUser(name, email, password, role);
+  console.log(newUser)
 
   if (newUser.error) {
     return next(newUser);

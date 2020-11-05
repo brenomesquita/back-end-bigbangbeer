@@ -7,9 +7,9 @@ const secret = 'xablaublaxablau';
 
 const singinEmail = rescue(async (req, res, next) => {
   const { email, password } = req.body;
-  console.log(email)
+
   const userValue = await loginService.singinEmail(email, password);
-  console.log(userValue)
+
   if (userValue.error) {
     return next(userValue);
   }

@@ -1,8 +1,10 @@
 const { usersModel } = require('../models');
 
 const singupUser = async (name, email, password, role) => {
-  const allUsers = await usersModel.getAllUsers();
+  console.log('allUsers')
 
+  const allUsers = await usersModel.getAllUsers();
+console.log(allUsers)
   if (allUsers.some((elem) => elem.email === email)) {
     return { error: true, status: 401, message: 'E-mail already in database.' };
   }

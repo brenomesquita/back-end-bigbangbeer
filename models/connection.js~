@@ -4,9 +4,9 @@ let schema;
 const mysql = require('@mysql/xdevapi');
 
 const config = {
-  user: process.env.MYSQL_USER || 'b994081f814fe2',
-  password: process.env.MYSQL_PASSWORD || '29553b05',
-  host: process.env.HOSTNAME || 'us-cdbr-east-02.cleardb.com',
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  host: process.env.HOSTNAME,
   port: 33060,
   socketPath: '/var/run/mysqld/mysqld.sock',
 };
