@@ -14,7 +14,7 @@ app.use(function(_req, res, next) {
     next();
 });
 app.use(cors());
-app.get('/', (_req, res) => { res.status(200).send({deploy: 'deployed: heroku_d35758a6591c78f'})})
+app.post('/login', (_req, res) => { console.log(res)})
 app.use('/login', routes.loginRoute);
 app.use('/register', routes.registerRoute);
 app.use('/profile', routes.profileRoute);
